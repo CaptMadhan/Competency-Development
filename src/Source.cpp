@@ -3,6 +3,9 @@
 using namespace std;
 
 int main() {
+
+	cout << "--------------------------------------------------------------" << endl;
+	cout << "-------------------------Assignment 1-------------------------" << endl;
 	//Creating an object of Car class
 	Car ferrari;
 
@@ -27,6 +30,12 @@ int main() {
 	ferrari.brake();
 	ferrari.brake();
 	cout << "Car speed after braking 5 times: " << ferrari.get_speed() << "KmpH" << endl;
+
+	cout << "--------------------------------------------------------------" << endl;
+	cout << "-------------------------Assignment 2-------------------------" << endl;
+
+	Car Benz("Benz",1960);
+	Car Random;
 
 	return 0;
 }
