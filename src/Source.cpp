@@ -4,8 +4,8 @@ using namespace std;
 
 int main() {
 
-	cout << "--------------------------------------------------------------" << endl;
-	cout << "-------------------------Assignment 1-------------------------" << endl;
+	cout << "\n--------------------------------------------------------------" << endl;
+	cout << "-------------------------Assignment 1-------------------------\n" << endl;
 	//Creating an object of Car class
 	Car ferrari;
 
@@ -31,11 +31,23 @@ int main() {
 	ferrari.brake();
 	cout << "Car speed after braking 5 times: " << ferrari.get_speed() << "KmpH" << endl;
 
-	cout << "--------------------------------------------------------------" << endl;
-	cout << "-------------------------Assignment 2-------------------------" << endl;
+	cout << "\n--------------------------------------------------------------" << endl;
+	cout << "-------------------------Assignment 2-------------------------\n" << endl;
 
 	Car Benz("Benz",1960);
 	Car Random;
+
+	cout << "\n--------------------------------------------------------------" << endl;
+	cout << "-------------------------Assignment 3-------------------------\n" << endl;
+
+	Car honda("Honda", 1978);
+	honda.accelerate();
+	honda.accelerate();
+
+	honda.display(honda.get_customerName());
+
+	cout << "\n--------------------------------------------------------------" << endl;
+	cout << "-------------------------The End-------------------------\n" << endl;
 
 	return 0;
 }

@@ -62,4 +62,14 @@ public:
 	void brake() {
 		speed -= 10;
 	}
+
+	//Function to Display class members
+	void display() {
+		cout << "Customer Name: " << get_customerName() << "\nRelease Year: " << get_ReleaseYear() << "\nCurrent Speed: " << get_speed() << endl;
+	}
+	//Overloaded Display function
+	void display(string s) {
+		if(s == "Honda")
+		cout << "Customer Name: Honda Motor Company" << "\nRelease Year: " << get_ReleaseYear() << "\nCurrent Speed: " << get_speed() << endl;
+	}
 };
