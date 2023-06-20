@@ -5,7 +5,48 @@
 
 using namespace std;
 
-class Car {
+class SoundSystem {
+public:
+
+	//Integer variable having the current value of sound system volume
+	int currentVolume = 0;
+
+	//Function to increment the currentVolume value by 1
+	void volumeInc() {
+		this->currentVolume += 1;
+		return;
+	}
+
+	//Function to decrement the currentVolume value by 1
+	void volumeDec() {
+		this->currentVolume -= 1;
+		return;
+	}
+
+	//Function to display currentVolume
+	void display_currentVolume() {
+		cout << "Current Volume: " << this->currentVolume << endl;
+		return;
+	}
+
+};
+
+class TempMonitor {
+public:
+	//Integer variable having the current temperature inside the car in Celsius
+	int currentTemp = 0;
+
+	//Integer variable having the external temperature of the environment in Celsius
+	int extTemp = 0;
+
+	//Function which sends out a warning when currentTemp >= extTemp
+	void highTempWarn() {
+		if (this->currentTemp >= extTemp)
+			cout << "Warning! Current Temperature is greater than external temperature\n" << endl;
+	}
+};
+
+class Car :public SoundSystem, public TempMonitor {
 private: 
 	//speed -> An integer that holds the car's current speed
 	int speed;
@@ -72,4 +113,6 @@ public:
 		if(s == "Honda")
 		cout << "Customer Name: Honda Motor Company" << "\nRelease Year: " << get_ReleaseYear() << "\nCurrent Speed: " << get_speed() << endl;
 	}
+
 };
+

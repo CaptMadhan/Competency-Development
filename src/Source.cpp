@@ -44,7 +44,31 @@ int main() {
 	honda.accelerate();
 	honda.accelerate();
 
+	//Calling the overloaded function
 	honda.display(honda.get_customerName());
+
+	cout << "\n--------------------------------------------------------------" << endl;
+	cout << "-------------------------Assignment 4-------------------------\n" << endl;
+
+	Car gac("GAC", 1998);
+	gac.display();
+
+	//Setting volume 
+	gac.currentVolume = 3;
+
+	//Incrementing volume twice and decrementing once
+	gac.volumeInc();
+	gac.volumeInc();
+	gac.volumeDec();
+	gac.display_currentVolume();
+
+	//Setting the temperature values 
+	gac.currentTemp = 20;
+	gac.extTemp = 19;
+	cout << "Current Temperature: " << gac.currentTemp << "\tExternal Temperature: " << gac.extTemp << endl;
+	//Check HighTempWarn()
+	gac.highTempWarn();
+
 
 	cout << "\n--------------------------------------------------------------" << endl;
 	cout << "-------------------------The End-------------------------\n" << endl;
