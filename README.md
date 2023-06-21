@@ -14,4 +14,16 @@ Implement default, parameterized constructors and destructors with appropriate m
 Here is the output screenshot<br>
 ![Output2](Assignment2_output.png)<br>
 
+Assignment 3:
+Implement an overloaded function.
+
+Here is the output screenshot<br>
+![Output3](Assignment3_output.png)<br>
+
+Assignment 4:
+Use Inheritance
+
+Here is the output screenshot<br>
+![Output4](Assignment4_output.png)<br>
+
 Refer inc folder for header files and src folder for source files.

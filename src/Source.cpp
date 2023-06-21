@@ -69,6 +69,8 @@ int main() {
 	//Check HighTempWarn()
 	gac.highTempWarn();
 
+	cout << "The type of inheritance used in Multiple Inheritance since the derived class \"Car\" class has 2 base classes i.e. \"SoundSystem\" and \"TempMonitor\"\n" << endl;
+
 
 	cout << "\n--------------------------------------------------------------" << endl;
 	cout << "-------------------------The End-------------------------\n" << endl;
