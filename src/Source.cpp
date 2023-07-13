@@ -73,6 +73,43 @@ int main() {
 
 
 	cout << "\n--------------------------------------------------------------" << endl;
+	cout << "-------------------------Assignment 5-------------------------\n" << endl;
+
+	cout << "\n-----Volkswagen-----" << endl;
+	Updated_Car VW("VW", 1998, "Black");
+	VW.display();
+
+	VW.set_customerName("Volkswagen");
+	VW.set_speed(70);
+
+	cout << "-----After Updating the values-----" << endl;
+
+	VW.display();
+
+	//Setting volume 
+	VW.currentVolume = 3;
+
+	//Incrementing volume twice and decrementing once
+	VW.volumeInc();
+	VW.volumeInc();
+	VW.volumeDec();
+	VW.display_currentVolume();
+
+	//Setting the temperature values 
+	VW.currentTemp = 20;
+	VW.extTemp = 19;
+	cout << "Current Temperature: " << gac.currentTemp << "\tExternal Temperature: " << gac.extTemp << endl;
+	//Check HighTempWarn()
+	VW.highTempWarn();
+
+	cout << "-----Audi-----" << endl;
+	Updated_Car Audi("00000", 1900, "Silver");
+	Audi.set_customerName("Audi");
+	Audi.set_speed(50);
+	Audi.display();
+
+
+	cout << "\n--------------------------------------------------------------" << endl;
 	cout << "-------------------------The End-------------------------\n" << endl;
 
 	return 0;

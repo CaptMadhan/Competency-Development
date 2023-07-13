@@ -52,8 +52,6 @@ private:
 	int speed;
 
 public:
-
-
 	//Customer -> A string that holds the maker of the car
 	string customer;
 
@@ -114,5 +112,56 @@ public:
 		cout << "Customer Name: Honda Motor Company" << "\nRelease Year: " << get_ReleaseYear() << "\nCurrent Speed: " << get_speed() << endl;
 	}
 
+};
+
+
+//Updated CAR class for Assignment 4
+class Updated_Car : public Car {
+
+private:
+	//Variable to store speed
+	int updated_speed = 0;
+	//Variable to store customer Name
+	string customerName;
+
+public:
+	string color;
+	Updated_Car() {
+		customerName = "Random Customer";
+		releaseYear = 2000;
+		updated_speed = 0;
+		color = "White";
+	}
+	Updated_Car(string customer, int releaseYear, string color) {
+		this->customerName = customer;
+		this->releaseYear = releaseYear;
+		this->updated_speed = 0;
+		this->color = color;
+	}
+	string get_color() {
+		return this->color;
+	}
+
+	//Function to Display class members
+	void display() {
+		cout << "Customer Name: " << get_customerName() << "\nRelease Year: " << get_ReleaseYear() << "\nCurrent Speed: " << get_speed() << "\nCar color: " << get_color() << endl;
+	}
+
+	//Getter Setter functions to access class members
+	void set_customerName(string name) {
+		this->customerName = name;
+	}
+
+	string get_customerName() {
+		return this->customerName;
+	}
+
+	void set_speed(int speed) {
+		this->updated_speed = speed;
+	}
+
+	int get_speed() {
+		return updated_speed;
+	}
 };
 
